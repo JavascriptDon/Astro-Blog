@@ -1,0 +1,62 @@
+---
+import HeaderLink from './HeaderLink.astro';
+import { SITE_TITLE } from '../config';
+import ThemeChange from './ThemeChange.astro';
+---
+
+<header>
+    <ThemeChange/>
+	<h2>
+		<HeaderLink href="/">{SITE_TITLE}</HeaderLink>
+	</h2>
+	<nav>
+		<HeaderLink href="/">Blog</HeaderLink>
+		<HeaderLink href="https://twitter.com/legs_taken" target="_blank">Twitter</HeaderLink>
+		<HeaderLink href="https://github.com/JavascriptDon/Astro-Blog" target="_blank">GitHub</HeaderLink>
+		<HeaderLink href="/rss.xml">RSS</HeaderLink>
+	</nav>
+</header>
+<style>
+	header {
+		margin: 0em 0 2em;
+	}
+	h2 {
+		margin: 0.5em 0;
+	}
+</style>
+
+<script>
+// Get the theme toggle input
+const themeToggle = document.querySelector(
+  '.theme-switch input[type="checkbox"]'
+);
+
+// Get the current theme from local storage
+const currentTheme = localStorage.getItem("theme");
+
+// If the current local storage item can be found
+if (currentTheme) {
+  // Set the body data-theme attribute to match the local storage item
+  document.documentElement.setAttribute("data-theme", currentTheme);
+
+  // If the current theme is dark, check the theme toggle
+  if (currentTheme === "dark") {
+    themeToggle.checked = true;
+  }
+}
+
+// Function that will switch the theme based on the if the theme toggle is checked or not
+function switchTheme(e) {
+  if (e.target.checked) {
+    document.documentElement.setAttribute("data-theme", "dark");
+    localStorage.setItem("theme", "dark");
+  } else {
+    document.documentElement.setAttribute("data-theme", "light");
+    localStorage.setItem("theme", "light");
+  }
+}
+
+// Add an event listener to the theme toggle, which will switch the theme
+themeToggle.addEventListener("change", switchTheme, false);
+
+</script>
