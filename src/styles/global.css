@@ -12,10 +12,12 @@
   --color-bg: #f2f2f2;
   --color-text: #444444;
   --bold-text: #222;
-  --nav-text: #000000;
+  --nav-heading: #000000;
   --code: #f2f2f2;
   --block-quote-border: #999;
   --block-quote-text: #222;
+  --blog-title: #252422;
+  --blog-visited: #8e32dc;
   --slider-bg: #dddddd;
   --slider-bg-before: #fff;
   --slider-input-bg: #8758ff;
@@ -44,11 +46,22 @@ b {
   color: var(--bold-text);
 }
 a {
-  color: var(--nav-text);
+  color: var(--nav-heading);
 }
 nav a {
   margin-right: 10px;
 }
+
+ul li a{
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: var(--blog-title);
+}
+
+ul li a:visited {
+  color: var(--blog-visited);
+}
+
 textarea {
   width: 100%;
   font-size: 16px;
@@ -76,6 +89,7 @@ pre {
 pre > code {
   all: unset;
 }
+/**/
 blockquote {
   border: 1px solid var(--block-quote-border);
   color: var(--block-quote-text);
@@ -88,10 +102,12 @@ blockquote {
   --color-bg: #000;
   --color-text: #dddddd;
   --bold-text: #eeeeee;
-  --nav-text: #dddddd;
+  --nav-heading: #dddddd;
   --code: #f2f2f2;
   --block-quote-border: #8e32dc;
   --block-quote-text: #dddddd;
+  --blog-title: #edf2f4;
+  --blog-visited: #FCD53F;
 }
 
 /* TOGGLE  */
@@ -99,11 +115,6 @@ blockquote {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-}
-
-.theme-switch-wrapper em {
-  margin-left: 10px;
-  font-size: 1rem;
 }
 
 .theme-switch {

@@ -3,7 +3,7 @@ layout: "../../layouts/BlogPost.astro"
 title: "How I built my Astro Blog from scratch? Part 1"
 description: "My journey to becoming an Astronaut. 🚀"
 pubDate: "Sep 23 2022"
-pubtime: "T22:40:32.169Z"
+author: "By Helitha Rupasinghe"
 heroImage: "/placeholder-hero.jpg"
 ---
 

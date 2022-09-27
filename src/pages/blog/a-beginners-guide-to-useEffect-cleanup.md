@@ -3,6 +3,7 @@ layout: "../../layouts/BlogPost.astro"
 title: "A Beginner's Guide to UseEffect Cleanup: How and When to Use It."
 description: "With useEffect, you perform side effects from within functional components, which is an important concept for mastering React today."
 pubDate: "Sep 2 2022"
+author: "By Helitha Rupasinghe"
 heroImage: "/placeholder-useEffect.jpg"
 ---
 

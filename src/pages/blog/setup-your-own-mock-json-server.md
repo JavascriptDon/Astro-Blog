@@ -3,6 +3,7 @@ layout: "../../layouts/BlogPost.astro"
 title: "Setup your own Mock RESTful API fast with JSON Server"
 description: "In this article, we'll use JSON Server, a **Node Module** that enables you to quickly develop an example REST API in 30 seconds."
 pubDate: "Sep 15 2022"
+author: "By Helitha Rupasinghe"
 heroImage: "/placeholder-json.jpg"
 ---
 
