@@ -241,7 +241,7 @@ input:checked + .slider .feather-sun {
 
 <h2 style="font-size: 1.875rem; margin-top: 1rem; margin-bottom: 1rem;">JavaScript</h2>
 
-<p style="font-size: 1.15rem; margin-top: 1rem; margin-bottom: 1rem;">In JavaScript, local storage is an object that is part of the window object, so we can directly access it and try to find an item that is stored inside. We use the getItem function and pass in the property we want to find inside of our `ThemeChange.astro` component. </p>
+<p style="font-size: 1.15rem; margin-top: 1rem; margin-bottom: 1rem;">In JavaScript, local storage is an object that is part of the window object, so we can directly access it and try to find an item that is stored inside. We use the getItem function and pass in the property we want to find inside of our <b>ThemeChange.astro</b> component. </p>
 
 ```
 <script>

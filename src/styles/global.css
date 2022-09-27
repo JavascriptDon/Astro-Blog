@@ -58,9 +58,9 @@ ul li a{
   color: var(--blog-title);
 }
 
-ul li a:visited {
+/* ul li a:visited {
   color: var(--blog-visited);
-}
+} */
 
 textarea {
   width: 100%;
